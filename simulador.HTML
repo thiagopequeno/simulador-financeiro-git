@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(104, 210, 104)"></body>
+    
+    <h1 style="color: rgb(82, 55, 55) ;">Simule aqui</h1>
+    <h2><p><i> estamos oferecendo sensores para encubadoras de animais que estao proximos da extinção devido ao aquecimento global.</i></p></h2> <br>
+    <h2>veja aqui se esta perdendo dinheiro e ovos</h2>
+    Quantidade de ovos <input id="id_ovos">
+    <br>Ovos chocados <input id="id_chock">
+    <br>valor investido <input id="id_investimento">
+    <br>ovos perdidos <input id="id_perdido">
+
+   <br> <button onclick="verificar()">verificar</button>
+   <div id="exibir"></div>
+</body>
+</html>
+<script>
+function verificar(){
+var ovos=id_ovos.value
+var chocados=id_chock.value
+var investido=id_investimento.value
+var perdi= id_perdido.value
+var resultado=ovos*chocados
+if(ovos>chocados){
+exibir.innerHTML=`com o investimento de ${investido*ovos}R$ você tem ${ovos} ovos e chocaram apenas ${chocados} voce teve um prejuizo de ${investido*perdi}R$`}
+else{exibir.innerHTML=`voce nao teve prejuizo nessa remeça de ovos, mais poderia evitar futuras perdas com nosso sensor`}
+
+
+}
+
+
+
+
+</script>
